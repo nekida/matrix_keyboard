@@ -5,6 +5,7 @@
 "matrix_keyboard\usart.o"
 "matrix_keyboard\stm32f0xx_it.o"
 "matrix_keyboard\stm32f0xx_hal_msp.o"
+"matrix_keyboard\matrix_keyboard.o"
 "matrix_keyboard\stm32f0xx_hal_tim.o"
 "matrix_keyboard\stm32f0xx_hal_tim_ex.o"
 "matrix_keyboard\stm32f0xx_hal_uart.o"

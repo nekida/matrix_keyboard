@@ -3,7 +3,7 @@
 <title>Static Call Graph - [matrix_keyboard\matrix_keyboard.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image matrix_keyboard\matrix_keyboard.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Thu Mar 19 16:59:38 2020
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060528: Last Updated: Wed Mar 25 13:22:36 2020
 <BR><P>
 <H3>Maximum Stack Usage =        216 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -249,8 +249,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[47]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
-<LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_symbol
+<BR><BR>[Called By]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_symbol
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_GPIO_Init
 </UL>
 
 <P><STRONG><a name="[33]"></a>HAL_GetTick</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f0xx_hal.o(i.HAL_GetTick))
@@ -415,8 +415,8 @@ Global Symbols
 <P><STRONG><a name="[46]"></a>MX_GPIO_Init</STRONG> (Thumb, 160 bytes, Stack size 48 bytes, gpio.o(i.MX_GPIO_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = MX_GPIO_Init &rArr; HAL_GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
-<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
+<LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
 <LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -513,8 +513,8 @@ Global Symbols
 
 <P><STRONG><a name="[63]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[4e]"></a>check_password</STRONG> (Thumb, 70 bytes, Stack size 8 bytes, main.o(i.check_password))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = check_password &rArr; get_symbol
+<P><STRONG><a name="[4e]"></a>check_password</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, main.o(i.check_password))
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = check_password &rArr; get_symbol
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_symbol
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
@@ -522,11 +522,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[4f]"></a>get_symbol</STRONG> (Thumb, 158 bytes, Stack size 120 bytes, main.o(i.get_symbol))
+<P><STRONG><a name="[4f]"></a>get_symbol</STRONG> (Thumb, 154 bytes, Stack size 120 bytes, matrix_keyboard.o(i.get_symbol))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = get_symbol
 </UL>
-<BR>[Calls]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
+<LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_password
 </UL>

@@ -1,6 +1,6 @@
 Dependencies for Project 'matrix_keyboard', Target 'matrix_keyboard': (DO NOT MODIFY !)
 F (startup_stm32f031x6.s)(0x5E6F936E)(--cpu Cortex-M0 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_matrix_keyboard-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F031x6 SETA 1"--list startup_stm32f031x6.lst --xref -o matrix_keyboard\startup_stm32f031x6.o --depend matrix_keyboard\startup_stm32f031x6.d)
-F (../Src/main.c)(0x5E735C85)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_matrix_keyboard-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F031x6 -DUSE_HAL_DRIVER -DSTM32F031x6-o matrix_keyboard\main.o --omf_browse matrix_keyboard\main.crf --depend matrix_keyboard\main.d)
+F (../Src/main.c)(0x5E7B30EC)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_matrix_keyboard-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F031x6 -DUSE_HAL_DRIVER -DSTM32F031x6-o matrix_keyboard\main.o --omf_browse matrix_keyboard\main.crf --depend matrix_keyboard\main.d)
 I (../Inc/main.h)(0x5E6F936D)
 I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h)(0x5E6F3803)
 I (../Inc/stm32f0xx_hal_conf.h)(0x5E6F936D)
@@ -35,6 +35,7 @@ I (../Inc/gpio.h)(0x5E6F936C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588BC994)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588BC994)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x588BC994)
+I (../Inc/matrix_keyboard.h)(0x5E7B131F)
 F (../Src/gpio.c)(0x5E6F936C)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_matrix_keyboard-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F031x6 -DUSE_HAL_DRIVER -DSTM32F031x6-o matrix_keyboard\gpio.o --omf_browse matrix_keyboard\gpio.crf --depend matrix_keyboard\gpio.d)
 I (../Inc/gpio.h)(0x5E6F936C)
 I (../Inc/main.h)(0x5E6F936D)
@@ -129,6 +130,37 @@ I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h)(0x5E6F3803)
 I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h)(0x5E6F3803)
 I (../Inc/stm32f0xx_it.h)(0x5E6F936C)
 F (../Src/stm32f0xx_hal_msp.c)(0x5E6F936D)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_matrix_keyboard-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F031x6 -DUSE_HAL_DRIVER -DSTM32F031x6-o matrix_keyboard\stm32f0xx_hal_msp.o --omf_browse matrix_keyboard\stm32f0xx_hal_msp.crf --depend matrix_keyboard\stm32f0xx_hal_msp.d)
+I (../Inc/main.h)(0x5E6F936D)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h)(0x5E6F3803)
+I (../Inc/stm32f0xx_hal_conf.h)(0x5E6F936D)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_def.h)(0x5E6F3803)
+I (../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f0xx.h)(0x5E6F37FE)
+I (../Drivers/CMSIS/Device/ST/STM32F0xx/Include/stm32f031x6.h)(0x5E6F37FE)
+I (../Drivers/CMSIS/Include/core_cm0.h)(0x5E6F3802)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BC994)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5E6F3802)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5E6F3802)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5E6F3802)
+I (../Drivers/CMSIS/Device/ST/STM32F0xx/Include/system_stm32f0xx.h)(0x5E6F37FE)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x588BC994)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_rcc_ex.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_gpio_ex.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_exti.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_dma_ex.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_cortex.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_flash_ex.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_i2c_ex.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart.h)(0x5E6F3803)
+I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_uart_ex.h)(0x5E6F3803)
+F (..\Src\matrix_keyboard.c)(0x5E7B131F)(--c99 -c --cpu Cortex-M0 -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc -I ../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_matrix_keyboard-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F031x6 -DUSE_HAL_DRIVER -DSTM32F031x6-o matrix_keyboard\matrix_keyboard.o --omf_browse matrix_keyboard\matrix_keyboard.crf --depend matrix_keyboard\matrix_keyboard.d)
+I (../Inc/matrix_keyboard.h)(0x5E7B131F)
 I (../Inc/main.h)(0x5E6F936D)
 I (../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal.h)(0x5E6F3803)
 I (../Inc/stm32f0xx_hal_conf.h)(0x5E6F936D)

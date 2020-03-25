@@ -34,3 +34,4 @@ matrix_keyboard\main.o: ../Inc/gpio.h
 matrix_keyboard\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 matrix_keyboard\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 matrix_keyboard\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+matrix_keyboard\main.o: ../Inc/matrix_keyboard.h

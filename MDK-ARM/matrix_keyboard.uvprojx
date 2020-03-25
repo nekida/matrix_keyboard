@@ -415,6 +415,11 @@
               <FileType>1</FileType>
               <FilePath>../Src/stm32f0xx_hal_msp.c</FilePath>
             </File>
+            <File>
+              <FileName>matrix_keyboard.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\matrix_keyboard.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
