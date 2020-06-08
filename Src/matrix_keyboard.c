@@ -10,21 +10,18 @@ char get_symbol(void)
 	uint16_t array_pins_in[] = {mkey_in_4_Pin, mkey_in_3_Pin, mkey_in_2_Pin, mkey_in_1_Pin};
 	
 	char chars[] = {'1', '2', '3', 'A',
-									'4', '5', '6', 'B',
-									'7', '8', '9', 'C',
-									'*', '0', '#', 'D'};
+			'4', '5', '6', 'B',
+			'7', '8', '9', 'C',
+			'*', '0', '#', 'D'};
 	uint8_t cnt = 0;
 	uint8_t index = 0;
 	uint8_t i, j;
 									
-	for(i = 0; i < 4; i++)
-	{
+	for(i = 0; i < 4; i++){
 		HAL_GPIO_WritePin(array_ports_out[i], array_pins_out[i], GPIO_PIN_SET);
-		for(j = 0; j < 4; j++)
-		{
+		for(j = 0; j < 4; j++){
 			cnt++;
-			if(HAL_GPIO_ReadPin(array_ports_in[j], array_pins_in[j]))
-			{
+			if(HAL_GPIO_ReadPin(array_ports_in[j], array_pins_in[j])){
 				index = cnt;
 			}		
 		}
