@@ -1,0 +1,2 @@
+../Core/Src/matrix_keyboard.c:15:6:matrix_keyboard_init	24	static
+../Core/Src/matrix_keyboard.c:36:6:matrix_keyboard_get_char	16	static
