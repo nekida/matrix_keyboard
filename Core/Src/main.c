@@ -88,25 +88,20 @@ int main(void)
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
   {
-        matrix_keyboard_t matrix_keyboard;
-
-        matrix_keyboard.cols[0].port = GPIOB;
-        matrix_keyboard.cols[0].pin = GPIO_PIN_15;
-        matrix_keyboard.cols[1].port = GPIOB;
-        matrix_keyboard.cols[1].pin = GPIO_PIN_14;
-        matrix_keyboard.cols[2].port = GPIOB;
-        matrix_keyboard.cols[2].pin = GPIO_PIN_13;
-        matrix_keyboard.cols[3].port = GPIOB;
-        matrix_keyboard.cols[3].pin = GPIO_PIN_12;
-
-        matrix_keyboard.strs[0].port = GPIOA;
-        matrix_keyboard.strs[0].pin = GPIO_PIN_11;
-        matrix_keyboard.strs[1].port = GPIOA;
-        matrix_keyboard.strs[1].pin = GPIO_PIN_10;
-        matrix_keyboard.strs[2].port = GPIOA;
-        matrix_keyboard.strs[2].pin = GPIO_PIN_9;
-        matrix_keyboard.strs[3].port = GPIOA;
-        matrix_keyboard.strs[3].pin = GPIO_PIN_8;
+        matrix_keyboard_t matrix_keyboard = {
+            .cols = {
+                {GPIOB, GPIO_PIN_15},
+                {GPIOB, GPIO_PIN_14},
+                {GPIOB, GPIO_PIN_13},
+                {GPIOB, GPIO_PIN_12},
+            },
+            .strs = {
+                {GPIOA, GPIO_PIN_11},
+                {GPIOA, GPIO_PIN_10},
+                {GPIOA, GPIO_PIN_9},
+                {GPIOA, GPIO_PIN_8},
+            }
+        };
 
         if (!matrix_keyboard_init (&matrix_keyboard))
             Error_Handler ();
